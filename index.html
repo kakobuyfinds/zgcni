@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>DgoBuy spreadsheet | Sneakermaten, QC-foto’s en koopgids</title>
+  <meta name="description" content="Nederlandstalige gids bij DgoBuy spreadsheet. Verken tien categorieën, vergelijk maten en varianten, lees QC-foto’s en controleer je verzendkosten.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#103d40">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="DgoBuy spreadsheet | Van productlink tot shortlist">
+  <meta property="og:description" content="Tien categorieën en praktische stappen om maten, productfoto’s en verzendkosten te vergelijken.">
+  <meta property="og:image" content="https://images.laced.com/products/og/cc699f9d-1080-43cc-8f7c-9f88b0688e0c.jpg">
+  <meta property="og:image:alt" content="Witte Nike Air Max 1 met lichtblauwe accenten">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://images.laced.com">
+  <!-- index.html. De eerste Bing-resultatenpagina kon niet worden geverifieerd.
+       Tien unieke domeinen uit alternatieve zoekresultaten, met hun hoofdthema:
+       dgo-buy.com (productindex), dgosheets.com (categorieën en vergelijking),
+       qcradar.com (linkcontrole), cnfanssheet.com (aankoop en verzending),
+       yupoo.tips (bronlinks), bbd-buy.org (kostenopbouw), cnfans.tips (QC en tarieven),
+       kakobuyde.net (vracht), kakobuytiktok.com (productbronnen),
+       usfanskakobuy.com (controle vóór betaling). -->
+  <style>
+    :root{color-scheme:light;--ink:#172e30;--deep:#103d40;--paper:#f8f3e9;--white:#fffdf8;--muted:#465c5b;--line:#d1d9d0;--coral:#ffb294;--mint:#e0eee6}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit;text-underline-offset:.22em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #b23e25;outline-offset:4px}
+    .bar a:focus-visible,.end a:focus-visible{outline-color:var(--coral)}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    .bar,.end{background:var(--deep);color:var(--white)}
+    .bar .wrap,.end .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1rem}
+    .logo{font-weight:850;text-decoration:none;white-space:nowrap}
+    .bar .visit{font-size:.88rem}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;letter-spacing:-.035em}
+    h1{font-size:clamp(2.7rem,7.3vw,6.1rem);line-height:.96;overflow-wrap:anywhere}
+    h1 span{display:block}
+    h2{font-size:clamp(1.75rem,4vw,2.7rem)}
+    h3{font-size:clamp(1.2rem,2.5vw,1.45rem)}
+    p+p{margin-top:.65rem}
+    .label{font-size:.76rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .hero{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(1rem,4vw,3.5rem);align-items:center;padding-block:clamp(1.1rem,4vw,2.6rem)}
+    .hero h1{margin:.55rem 0 .85rem}
+    .hero p:not(.label){max-width:52ch;color:var(--muted)}
+    .hero figure{display:grid;grid-template-columns:minmax(0,1fr) auto;background:var(--coral);border:1px solid var(--deep);overflow:hidden}
+    .hero img{height:clamp(12rem,26vw,20rem);object-fit:contain;background:#fff}
+    .hero figcaption{writing-mode:vertical-rl;padding:.75rem .45rem;font-size:.74rem;font-weight:750}
+    .catalog{padding:1rem;background:var(--white);border:1px solid var(--line);box-shadow:5px 5px 0 var(--deep)}
+    .catalog h2{font-size:1.25rem;margin:0 0 .7rem}
+    .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.45rem;list-style:none;padding:0;margin:0}
+    .categories a{display:flex;align-items:center;gap:.45rem;height:100%;min-height:3rem;padding:.45rem .55rem;background:var(--mint);font-size:.88rem;font-weight:740;text-decoration:none}
+    .categories a:hover,.categories a:focus-visible{background:var(--coral)}
+    .categories span{font-size:.7rem;color:var(--muted)}
+    .section{margin-block:clamp(2.25rem,6vw,4.2rem)}
+    .section>h2{margin:.35rem 0 .85rem}
+    .desk{display:grid;grid-template-columns:1.6fr 1fr;gap:1rem;align-items:start}
+    .guides{border-top:1px solid var(--line)}
+    .guide{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:.65rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+    .guide h3,.note h3{margin-bottom:.45rem}
+    .guide .label{color:#843a29}
+    .note{padding:1rem 1.15rem;background:var(--mint);border-top:4px solid var(--deep)}
+    .note dl{margin:.75rem 0 0}
+    .note dt{font-weight:750}
+    .note dd{margin:0 0 .65rem;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin-top:1rem}
+    .gallery figure{overflow:hidden;background:var(--white);border:1px solid var(--line)}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#fff}
+    .gallery figcaption{padding:.65rem .75rem;font-size:.86rem}
+    .gallery strong{display:block}
+    .faq{background:var(--white);border:1px solid var(--line);padding:clamp(1rem,3vw,1.8rem)}
+    details{border-top:1px solid var(--line)}
+    summary{padding:.75rem .1rem;font-weight:750;cursor:pointer}
+    details p{padding:0 .1rem .8rem;max-width:72ch}
+    .end p{max-width:62ch;font-size:.88rem}
+    .end a{flex:none;padding:.6rem .8rem;background:var(--coral);color:var(--ink);font-weight:800;text-decoration:none}
+    @media(max-width:850px){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:640px){.hero,.desk{grid-template-columns:1fr}.hero img{height:11.5rem}.categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.end .wrap{align-items:flex-start;flex-direction:column}}
+    @media(max-width:345px){.bar .visit{display:none}.categories a{font-size:.8rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "name":"Veelgestelde vragen over DgoBuy spreadsheet",
+    "inLanguage":"nl",
+    "mainEntity":[
+      {"@type":"Question","name":"Wat is een DgoBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Een DgoBuy spreadsheet is een overzicht waarmee je productlinks per categorie kunt vinden en vergelijken. Controleer bij de aanbieder welke maat, kleur en uitvoering momenteel beschikbaar zijn."}},
+      {"@type":"Question","name":"Hoe kies ik een sneakermaat als maattabellen verschillen?","acceptedAnswer":{"@type":"Answer","text":"Meet beide voeten en gebruik de lengte van je langste voet. Zoek in de tabel van het gekozen model of de centimeters voetlengte of binnenzoollengte aangeven en vergelijk dezelfde soort maat."}},
+      {"@type":"Question","name":"Kun je de echtheid van een merkartikel aan QC-foto’s zien?","acceptedAnswer":{"@type":"Answer","text":"Nee. QC-foto’s helpen je zichtbare details en de gekozen variant te vergelijken. Vraag voor merkauthenticiteit om herkomstbewijs en laat een duur artikel zo nodig onafhankelijk beoordelen."}},
+      {"@type":"Question","name":"Wat doe ik als een productlink niet meer werkt?","acceptedAnswer":{"@type":"Answer","text":"Zoek binnen dezelfde categorie op modelnaam of artikelcode. Controleer bij een vervangende link opnieuw de verkoper, de maattabel en de exacte uitvoering."}},
+      {"@type":"Question","name":"Wat controleer ik vóór verzending naar Nederland of België?","acceptedAnswer":{"@type":"Answer","text":"Controleer het afleverland, de verzendoptie, het berekende pakketgewicht en het eindbedrag. Kijk ook welke invoerkosten en afhandelingskosten al in het getoonde totaal zitten."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/zgcni/">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap">
+      <a class="logo" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <a class="visit" href="https://www.hipobuyfind.com">Open de catalogus ↗</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="titel">
+      <div>
+        <p class="label">Koopgids voor Nederland en Vlaanderen</p>
+        <h1 id="titel">DgoBuy <span>spreadsheet</span></h1>
+        <p>Begin met een categorie en bewaar twee productlinks die je goed kunt vergelijken. Deze gids laat zien welke maten, foto’s en kosten je erbij noteert voordat je een keuze maakt.</p>
+      </div>
+      <figure>
+        <img src="https://images.laced.com/products/cc699f9d-1080-43cc-8f7c-9f88b0688e0c.jpg?width=640"
+             srcset="https://images.laced.com/products/cc699f9d-1080-43cc-8f7c-9f88b0688e0c.jpg?width=384 384w, https://images.laced.com/products/cc699f9d-1080-43cc-8f7c-9f88b0688e0c.jpg?width=640 640w"
+             sizes="(max-width: 640px) 320px, 450px" width="640" height="640"
+             alt="Zijaanzicht van een witte Nike Air Max 1 met lichtblauwe Swoosh" fetchpriority="high" loading="eager">
+        <figcaption>01 / Nike Air Max 1</figcaption>
+      </figure>
+    </section>
+
+    <nav class="catalog" aria-labelledby="categorieen">
+      <h2 id="categorieen">Kies je categorie</h2>
+      <ul class="categories">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html"><span aria-hidden="true">01</span> Schoenen</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span aria-hidden="true">02</span> Hoodies en truien</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span> T-shirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html"><span aria-hidden="true">04</span> Jassen</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span aria-hidden="true">05</span> Broeken en shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html"><span aria-hidden="true">06</span> Petten en mutsen</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html"><span aria-hidden="true">07</span> Sets</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span aria-hidden="true">08</span> Ondergoed</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html"><span aria-hidden="true">09</span> Sportshirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html"><span aria-hidden="true">10</span> Accessoires</a></li>
+      </ul>
+    </nav>
+
+    <section class="section" aria-labelledby="koopgids">
+      <p class="label">Van productlink tot shortlist</p>
+      <h2 id="koopgids">DgoBuy koopgids</h2>
+      <div class="desk">
+        <div class="guides">
+          <article class="guide">
+            <p class="label" aria-hidden="true">01</p>
+            <div>
+              <h3>DgoBuy productlinks vergelijken</h3>
+              <p>Leg twee aanbiedingen naast elkaar en schrijf per link de artikelcode, de verkoper en de gekozen kleurvariant op. Vergelijk dezelfde uitvoering. Controleer de actuele voorraad nadat je je maat hebt geselecteerd. Is een link verlopen, zoek dan op de artikelcode en open de nieuwe productpagina opnieuw.</p>
+            </div>
+          </article>
+          <article class="guide">
+            <p class="label" aria-hidden="true">02</p>
+            <div>
+              <h3>DgoBuy sneakers en kleding op maat kiezen</h3>
+              <p>Meet je voetlengte staand en kijk of de tabel ook de binnenzoollengte vermeldt. Meet bij een T-shirt de borstbreedte plat van oksel tot oksel en bij een hoodie ook de ruglengte. Draag je een trui onder een jas, gebruik dan een jas die daar al ruim genoeg voor zit als referentie.</p>
+              <p>Vergelijk bij broeken de taillebreedte en binnenbeenlengte. Bekijk voor een sportshirt de rek van de stof en bij een set de maattabel per onderdeel. Meet voor petten de hoofdomtrek en voor armbanden de polsomtrek.</p>
+            </div>
+          </article>
+          <article class="guide">
+            <p class="label" aria-hidden="true">03</p>
+            <div>
+              <h3>DgoBuy QC-foto’s beoordelen</h3>
+              <p>QC staat voor kwaliteitscontrole. Bekijk bij sneakers de buitenzool, het hielprofiel en het maatlabel. Vraag bij een sweater om een close-up van het stiksel en het waslabel. Laat bij twijfel een foto met meetlint maken en controleer of de foto bij jouw uitvoering hoort.</p>
+            </div>
+          </article>
+          <article class="guide">
+            <p class="label" aria-hidden="true">04</p>
+            <div>
+              <h3>DgoBuy verzendkosten vergelijken</h3>
+              <p>Zet de artikelprijs en binnenlandse verzendkosten apart van internationale verzending. Vraag om het werkelijke gewicht én de doosafmetingen als de vervoerder volumegewicht gebruikt. Controleer voor Nederland of België in welke valuta je betaalt en of eventuele betaal-, invoer- en afhandelingskosten in het eindbedrag zitten.</p>
+            </div>
+          </article>
+        </div>
+        <aside class="note" aria-labelledby="notitie">
+          <h3 id="notitie">Wat zet je in je vergelijking?</h3>
+          <dl>
+            <dt>Uitvoering</dt><dd>Productlink, verkoper, kleur en gekozen maat.</dd>
+            <dt>Pasvorm</dt><dd>Jouw referentiemaat in centimeters en het meetpunt op de maattabel.</dd>
+            <dt>Controle</dt><dd>De foto of meting die je nog nodig hebt, bijvoorbeeld de zoollengte of de breedte van een sluiting.</dd>
+            <dt>Kosten en retour</dt><dd>Totaalbedrag voor het juiste afleverland en de retourtermijn voor jouw variant.</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="beelden">
+      <p class="label">Details in beeld</p>
+      <h2 id="beelden">Waar kijk je naar op een productfoto?</h2>
+      <p>Deze merkfoto’s illustreren pasvorm en afwerking. Controleer de actuele productpagina voor de uitvoering, herkomst en beschikbaarheid.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-denim-cap--M5367M_PM2_Front%20view.png?wid=490&amp;hei=490" width="490" height="490" loading="lazy" decoding="async" alt="Blauwe Louis Vuitton-denimpet met monogrampatroon">
+          <figcaption><strong>Louis Vuitton / denimpet</strong>Bekijk de vorm van de klep en vraag naar het verstelbereik.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_600x600/1713167199/789582_XJGLM_1082_001_100_0000_Light-Printed-cotton-jersey-sweatshirt.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Zwart Gucci-sweatshirt met logoprint op de borst">
+          <figcaption><strong>Gucci / sweatshirt</strong>Bekijk de halsboord en vergelijk de mouwlengte met je eigen trui.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/380/173/original/1115521_01.jpg.jpeg?width=450" width="500" height="500" loading="lazy" decoding="async" alt="Donkerblauw Dior Oblique T-shirt met toon-op-toonpatroon">
+          <figcaption><strong>Dior / Oblique T-shirt</strong>Vraag bij een subtiel patroon om een detailfoto in daglicht.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Hermès Clic H-armband met emaille en H-vormige sluiting">
+          <figcaption><strong>Hermès / Clic H-armband</strong>Controleer de binnenomtrek en vraag zo nodig om een foto van de geopende sluiting.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="vragen">
+      <p class="label">Korte antwoorden</p>
+      <h2 id="vragen">Veelgestelde vragen over DgoBuy spreadsheet</h2>
+      <details open>
+        <summary>Wat is een DgoBuy spreadsheet?</summary>
+        <p>Een DgoBuy spreadsheet is een overzicht waarmee je productlinks per categorie kunt vinden en vergelijken. Controleer bij de aanbieder welke maat, kleur en uitvoering momenteel beschikbaar zijn.</p>
+      </details>
+      <details>
+        <summary>Hoe kies ik een sneakermaat als maattabellen verschillen?</summary>
+        <p>Meet beide voeten en gebruik de lengte van je langste voet. Zoek in de tabel van het gekozen model of de centimeters voetlengte of binnenzoollengte aangeven en vergelijk dezelfde soort maat.</p>
+      </details>
+      <details>
+        <summary>Kun je de echtheid van een merkartikel aan QC-foto’s zien?</summary>
+        <p>Nee. QC-foto’s helpen je zichtbare details en de gekozen variant te vergelijken. Vraag voor merkauthenticiteit om herkomstbewijs en laat een duur artikel zo nodig onafhankelijk beoordelen.</p>
+      </details>
+      <details>
+        <summary>Wat doe ik als een productlink niet meer werkt?</summary>
+        <p>Zoek binnen dezelfde categorie op modelnaam of artikelcode. Controleer bij een vervangende link opnieuw de verkoper, de maattabel en de exacte uitvoering.</p>
+      </details>
+      <details>
+        <summary>Wat controleer ik vóór verzending naar Nederland of België?</summary>
+        <p>Controleer het afleverland, de verzendoptie, het berekende pakketgewicht en het eindbedrag. Kijk ook welke invoerkosten en afhandelingskosten al in het getoonde totaal zitten.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="end">
+    <div class="wrap">
+      <p>Onafhankelijke koopgids. Merknamen en foto’s dienen ter illustratie.</p>
+      <a href="https://www.hipobuyfind.com">Verder naar HipobuyFind ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
